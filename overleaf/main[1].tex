@@ -1,0 +1,134 @@
+% a mashup of hipstercv, friggeri and twenty cv
+\documentclass[lighthipster]{simplehipstercv}
+\usepackage[utf8]{inputenc}
+\usepackage[default]{raleway}
+\usepackage[margin=1cm, a4paper]{geometry}
+\usepackage{url} % Agregado para evitar errores con \url
+
+%------------------------------------------------------------------
+\newlength{\rightcolwidth}
+\newlength{\leftcolwidth}
+\setlength{\leftcolwidth}{0.23\textwidth}
+\setlength{\rightcolwidth}{0.75\textwidth}
+
+%------------------------------------------------------------------
+\title{CV Matteo Pratellesi Diaz}
+\author{Matteo Pratellesi Diaz}
+\date{Marzo 2026}
+
+\pagestyle{empty}
+\begin{document}
+
+\thispagestyle{empty}
+
+% Cabecera: El comando requiere 5 argumentos
+\simpleheader{headercolour}{Matteo}{Pratellesi Diaz}{Estudiante de Ingeniería Industrial}{white}
+
+\vspace{9em}
+
+\setlength{\columnsep}{1.5cm}
+\columnratio{0.23}[0.75]
+\begin{paracol}{2}
+\hbadness5000
+\paracolbackgroundoptions
+
+\footnotesize
+{\setasidefontcolour
+\flushright
+\begin{center}
+    % Asegurate de tener una imagen llamada image.png subida a Overleaf
+    \roundpic{image.png} 
+\end{center}
+
+\bg{cvgreen}{white}{Sobre mí}\\[0.5em]
+{\footnotesize
+Soy una persona proactiva con capacidad de liderazgo. Me apasiona la resolución de problemas complejos y el interés por la industria automotriz y la innovación tecnológica.}
+\bigskip
+
+\bg{cvgreen}{white}{Personal} \\[0.5em]
+Nacionalidad: Argentina \\
+Fecha de nacimiento: 08/09/2005
+
+\bigskip
+
+\bg{cvgreen}{white}{Especialización} \\[0.5em]
+Ingeniería ~•~ Idiomas ~•~ Mecánica ~•~ Emprendimientos
+
+\bigskip
+
+\bg{cvgreen}{white}{Intereses}\\[0.5em]
+Automovilismo ~•~ Esquí ~•~ Cocina ~•~ Cine y música
+
+\bigskip
+
+
+\infobubble{\faGithub}{cvgreen}{white}{matteo-pratellesi}
+}
+
+\switchcolumn
+
+\small
+\section*{Historia Académica}
+% Corregido: \cvevent lleva 6 argumentos. Faltaban llaves en las últimas líneas.
+\begin{tabular}{r| p{0.5\textwidth} c}
+    \cvevent{2009--2018}{Educación Primaria}{Colegio Rainbow}{Mendoza \color{cvred}}{}{} \\
+    \cvevent{2019--2023}{Educación Secundaria}{Colegio Universitario Central}{Mendoza \color{cvred}}{Bachiller en Cs. Naturales}{} \\
+    \cvevent{2024--Actualidad}{Educación Universitaria}{UNCuyo}{Mendoza \color{cvred}}{Facultad de Ingeniería 3°año en curso}{}
+\end{tabular}
+
+\vspace{2em}
+
+\begin{minipage}[t]{0.4\textwidth}
+\section*{Promedios}
+\begin{tabular}{r p{0.6\textwidth} c}
+    \cvdegree{2018}{Primario}{Abanderado Provincial}{9.99}{}{} \\
+    \cvdegree{2023}{Secundario}{}{9.87}{}{} \\
+\end{tabular}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.5\textwidth}
+\section*{Habilidades}
+\begin{tabular}{r @{\hspace{0.5em}}l}
+     \bg{skilllabelcolour}{iconcolour}{Comunicación} &  \barrule{0.15}{0.5em}{cvpurple}\\
+     \bg{skilllabelcolour}{iconcolour}{Liderazgo} & \barrule{0.25}{0.5em}{cvgreen} \\
+     \bg{skilllabelcolour}{iconcolour}{Responsabilidad} & \barrule{0.25}{0.5em}{cvpurple} \\
+     \bg{skilllabelcolour}{iconcolour}{Programación} & \barrule{0.1}{0.5em}{cvpurple} \\
+     \bg{skilllabelcolour}{iconcolour}{Idiomas} & \barrule{0.20}{0.5em}{cvpurple} \\
+\end{tabular}
+\end{minipage}
+
+\vspace{2em}
+
+\section*{Experiencia Laboral}
+\begin{tabular}{r| p{0.6\textwidth} c}
+    \cvevent{2020--2021}{Emprendimiento propio}{Venta productos de limpieza}{Mendoza}{}{} \\
+    \cvevent{2024}{Transporte y logística}{IMPRA S.A.}{Mendoza}{}{} \\
+\end{tabular}
+
+\vspace{2em}
+
+\begin{minipage}[t]{0.45\textwidth}
+\section*{Certificados}
+\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.7\textwidth}}
+    2022 & First Certificate B2 (Cambridge)\\
+    2018 & Certificado Internacional Trinity \\
+\end{tabular}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.45\textwidth}
+\section*{Idiomas}
+\begin{tabular}{l | ll}
+\textbf{Español} & C2 & {\footnotesize Nativo} \\
+\textbf{Inglés} & B2 & \pictofraction{\faCircle}{cvgreen}{3}{black!30}{1}{\tiny} \\
+\textbf{Italiano} & A1 & \pictofraction{\faCircle}{cvgreen}{1}{black!30}{3}{\tiny}
+\end{tabular}
+\end{minipage}
+
+\vfill
+
+\begin{minipage}[t]{\textwidth}
+\begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
+{\small mpratellesidiaz@gmail.com\icon{\faEnvelope}{cvgreen}{} Mendoza, Argentina \icon{\faMapMarker}{cvgreen}{} 2612584686 \icon{\faPhone}{cvgreen}{} }
+\end{center}
+\end{minipage}
+
+\end{paracol}
+\end{document}
